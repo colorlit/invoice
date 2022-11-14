@@ -5,14 +5,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import wave
 import soundfile as sf
-#import pyrubberband as pyrb
+import pyrubberband as pyrb
 
 # 1. pyaudio
 CHUNK = 1024
 FORMAT = pyaudio.paInt24
 CHANNELS = 1
 RATE = 44100
-RECORD_SECONDS = 3
+RECORD_SECONDS = 10
 
 p = pyaudio.PyAudio()
 
@@ -50,14 +50,9 @@ LENGTH = 512
 wavfilename = "output.wav"
 # wavobj, sr = librosa.load(wavfilename)
 
-# 3. Librosa / Pitch_shift (upward)
+# 3. Librosa / Rubberband Pitch_shift (upward)
 y_ax, sr = librosa.load(wavfilename)
-y_ts = librosa.effects.time_stretch(y_ax, rate=0.7)
-y_pc = librosa.effects.pitch_shift(y_ax, sr=sr, n_steps = 18)
-
-# Alternative sol pyrb
-#y_pyrb_ts = pyrubberband.pyrb.time_stretch(y_ax, sr=sr, rate=0.7)
-#y_pyrb_ps = pyrubberband.pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=18)
+y_pyrb_ps = pyrb.pitch_shift(y_ax, sr=sr, n_steps=10)
 
 # 4. Librosa output thru SF
-sf.write('output2.wav', y_pc, sr, subtype='PCM_24')
+sf.write('output2.wav', y_pyrb_ps, sr, subtype='PCM_24')
