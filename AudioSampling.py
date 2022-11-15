@@ -66,6 +66,11 @@ class AudioSampler(object):
         cent_t = librosa.frames_to_time(cent_frames, hop_length=self.lr_length)
         print(len(cent_t))
 
+        plt.figure(figsize=(25,10))
+        plt.plot(cent_t, cent_obj, color='r')
+        plt.show()
+        plt.savefig('testd_centroid.jpg')
+
     def start(self):
         pass
 
