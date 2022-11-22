@@ -77,23 +77,20 @@ for step in range(13):
         if cent_target > cent_eval:
             cur_steps += steps_inc
             y_eval_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=cur_steps)
-            #cent_eval = np.average(librosa.feature.spectral_centroid(y=y_eval_ps, sr=sr))
         elif cent_target < cent_eval:
             is_zero_crossed = True
-            #cur_steps -= steps_inc
 
     elif is_desc_mode is True:
         if cent_target < cent_eval:
             cur_steps -= steps_inc
             y_eval_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=cur_steps)
-            #cent_eval = np.average(librosa.feature.spectral_centroid(y=y_eval_ps, sr=sr))
         elif cent_target > cent_eval:
             is_zero_crossed = True
-            #cur_steps += steps_inc
 
     if is_zero_crossed is True:
         is_zero_crossed = False
-
+        y_eval_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=cur_steps)
+        
         if is_asc_mode is True:
             cur_steps -= steps_inc
         else:
