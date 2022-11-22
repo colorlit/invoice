@@ -11,6 +11,7 @@ import librosa.display
 import numpy as np
 import os
 import SampleProcessor
+import ffmpeg_conv
 
 form_class = uic.loadUiType("./invoice.ui")[0]
 
@@ -19,6 +20,7 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle('INVOICE')
         self.fig_tgt = plt.Figure()
         self.canvas_tgt = FigureCanvas(self.fig_tgt)
         self.layout_target_voice.addWidget(self.canvas_tgt)
@@ -41,6 +43,15 @@ class WindowClass(QMainWindow, form_class):
         self.input_dir = self.root_dir + r'\data\inputs'
         self.usr_input_dir = self.root_dir + r'\data\usr_inputs'
         self.output_dir = self.root_dir + r'\data\outputs'
+
+        # button click event handlers
+        self.push_btn_record.clicked.connect(lambda: self.btn_record())
+        self.push_btn_select.clicked.connect(lambda: self.btn_select())
+        self.push_btn_process.clicked.connect(lambda: self.btn_process())
+        self.push_btn_convert.clicked.connect(lambda: self.btn_convert())
+        self.push_btn_init.clicked.connect(lambda: self.btn_init())
+        self.push_btn_help.clicked.connect(lambda: self.btn_help())
+        # does anybody knows why these guys need lambda? plz elaborate
 
 
     def open_files(self):
@@ -83,6 +94,30 @@ class WindowClass(QMainWindow, form_class):
         #self.plot_usr.get_legend().remove()
         librosa.display.waveshow(self.y_usr, sr=self.sr_usr, ax=self.plot_usr)
         self.canvas_usr.draw()
+
+
+    def btn_record(self):
+        print('RECORDING')
+
+
+    def btn_select(self):
+        print('SELECTING')
+
+
+    def btn_convert(self):
+        ffmpeg_conv.format_convert()
+
+
+    def btn_process(self):
+        SampleProcessor.audio_process()
+
+
+    def btn_init(self):
+        print('INIT')
+
+
+    def btn_help(self):
+        print('HELP')
 
 
 if __name__ == "__main__":
