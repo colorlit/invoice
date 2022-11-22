@@ -1,0 +1,18 @@
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2316.7108908950113, cent_eval:2069.816420094792
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:3.0, cent_target:2316.7108908950113, cent_eval:2262.6314192929804
+2 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:6.0, cent_target:2316.7108908950113, cent_eval:2299.7257258055297
+3 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:9.0, cent_target:2316.7108908950113, cent_eval:2407.130664132547
+4 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:6.0, cent_target:2316.7108908950113, cent_eval:2407.130664132547
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:4.0, cent_target:2316.7108908950113, cent_eval:2299.7257258055297
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:5.0, cent_target:2316.7108908950113, cent_eval:2273.2715133980214
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:6.0, cent_target:2316.7108908950113, cent_eval:2299.7257258055297
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:7.0, cent_target:2316.7108908950113, cent_eval:2351.783284902091
+9 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:6.0, cent_target:2316.7108908950113, cent_eval:2351.783284902091
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:5.5, cent_target:2316.7108908950113, cent_eval:2299.7257258055297
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:5.75, cent_target:2316.7108908950113, cent_eval:2294.3792147563177
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:6.0, cent_target:2316.7108908950113, cent_eval:2299.7257258055297
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:6.25, cent_target:2316.7108908950113, cent_eval:2315.8502506017107
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:6.5, cent_target:2316.7108908950113, cent_eval:2316.7108908950113
+[SRC|n_steps:6.5|cent_avg:2316.7108908950113][EVA|n_steps:6.5|cent_avg:2316.7108908950113]
+
+Process finished with exit code 0
