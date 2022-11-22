@@ -11,47 +11,46 @@ import scipy
 
 
 files_list = []
+file_name = []
 root_dir = os.getcwd()
 input_dir = root_dir + r'\SAMPLES\inputs'
 output_dir = root_dir + r'\SAMPLES\outputs'
 
-files_list = os.listdir(input_dir)
+#files_list = os.listdir(input_dir)
 for path in os.listdir(input_dir):
     if os.path.isfile(os.path.join(input_dir, path)):
         files_list.append(path)
 
-file_name = input_dir + r'\\' + files_list[0]
+print(files_list)
+
+for filename in files_list:
+    file_name.append(os.path.join(input_dir, filename))
+
+#file_name = input_dir + r'\\' + files_list[0]
+
+print(file_name)
+
 
 # Preprocessing
-y_ax, sr = librosa.load(file_name)
+y_ax, sr = librosa.load(file_name[0])
 y_pyrb_ts = pyrb.time_stretch(y_ax, sr=sr, rate=1)
 y_pyrb_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=0)
 
-src_avg_orig = np.average(y_ax)
-src_avg = np.average(y_pyrb_ps)
+print('{0} file has loaded as target'.format(file_name[0]))
 
-src_cent_orig = librosa.feature.spectral_contrast(y=y_ax, sr=sr)
-src_cent = librosa.feature.spectral_centroid(y=y_pyrb_ps, sr=sr)
 
-src_cent_avg_orig = np.average(src_cent_orig)
-src_cent_avg = np.average(src_cent)
+# Input 2nd sample
 
-#np.savetxt('output_cent_src.txt', src_cent)
-#np.savetxt('output_cent_res.txt', res_cent)
+y_usr, sr_usr = librosa.load(file_name[1])
+y_sample_ts = pyrb.time_stretch(y_usr, sr=sr_usr, rate=1)
+y_sample_ps = pyrb.pitch_shift(y_sample_ts, sr=sr_usr, n_steps=0)
+cent_target = np.average(librosa.feature.spectral_centroid(y=y_sample_ps, sr=sr_usr))
 
-#print('{0} is source avg and {1} is results avg'.format(src_avg_orig, src_avg))
-#print('{0} is source centroid avg and {1} is result centroid avg'.format(src_cent_avg_orig, src_cent_avg))
+#sample_n_steps = -9.15
 
-# find n_steps required
-#for num_trials in range(5):
-
-# Pitch shift
-
-sample_n_steps = 6.5
-
-y_sample_ts = pyrb.time_stretch(y_ax, sr=sr, rate=1)
-y_sample_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=sample_n_steps)
-cent_target = np.average(librosa.feature.spectral_centroid(y=y_sample_ps, sr=sr))
+#y_sample_ts = pyrb.time_stretch(y_ax, sr=sr, rate=1)
+#y_sample_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=sample_n_steps)
+#cent_target = np.average(librosa.feature.spectral_centroid(y=y_sample_ps, sr=sr))
 
 
 # Calculate n_steps
@@ -69,7 +68,7 @@ if cent_target > cent_eval:
 elif cent_target < cent_eval:
     is_desc_mode = True
 
-for step in range(13):
+for step in range(15):
     cent_eval = np.average(librosa.feature.spectral_centroid(y=y_eval_ps, sr=sr))
     print('{0} step | is_zero_crossing:{1}, steps_inc:{2}, cur_steps:{3}, cent_target:{4}, cent_eval:{5}'.format(step, is_zero_crossed, steps_inc, cur_steps, cent_target, cent_eval))
 
@@ -90,7 +89,7 @@ for step in range(13):
     if is_zero_crossed is True:
         is_zero_crossed = False
         y_eval_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=cur_steps)
-        
+
         if is_asc_mode is True:
             cur_steps -= steps_inc
         else:
@@ -102,7 +101,7 @@ for step in range(13):
             steps_inc /= 2
 
 
-print('[SRC|n_steps:{0}|cent_avg:{1}][EVA|n_steps:{2}|cent_avg:{3}]'.format(sample_n_steps, cent_target, cur_steps, cent_eval))
+print('[SRC|n_steps:{0}|cent_avg:{1}][EVA|n_steps:{2}|cent_avg:{3}]'.format('unknown', cent_target, cur_steps, cent_eval))
 
 # 4. Librosa output thru SF
-#sf.write("Testd2.wav", y_pyrb_ps, sr, subtype='PCM_24')
+sf.write(os.path.join(output_dir, "test.wav"), y_eval_ps, sr, subtype='PCM_24')
