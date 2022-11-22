@@ -10,6 +10,8 @@ import librosa
 import librosa.display
 import numpy as np
 import os
+
+import AudioRecorder
 import SampleProcessor
 import ffmpeg_conv
 
@@ -97,7 +99,7 @@ class WindowClass(QMainWindow, form_class):
 
 
     def btn_record(self):
-        print('RECORDING')
+        AudioRecorder.recording()
 
 
     def btn_select(self):
