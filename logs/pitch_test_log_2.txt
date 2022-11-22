@@ -1,0 +1,273 @@
+7 files has loaded and sampled with centroid 2084.4056937521996 as target
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2883.162453264143
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2883.162453264143]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2454.779820999659
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2454.779820999659]
+2 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:2045.7597802846078
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2045.7597802846078]
+3 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2045.7597802846078
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2045.7597802846078]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2454.779820999659
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2454.779820999659]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2583.7762936278605
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2583.7762936278605]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2454.779820999659
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2454.779820999659]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2316.735353690663
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2316.735353690663]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2175.975121921648
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2175.975121921648]
+9 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:2045.7597802846078
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2045.7597802846078]
+10 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2045.7597802846078
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.5|cent_avg:2045.7597802846078]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.5, cent_target:2084.4056937521996, cent_eval:2175.975121921648
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.75|cent_avg:2175.975121921648]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.75, cent_target:2084.4056937521996, cent_eval:2213.8952407465904
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2213.8952407465904]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2175.975121921648
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.25|cent_avg:2175.975121921648]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-5.25, cent_target:2084.4056937521996, cent_eval:2146.6674227466715
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.5|cent_avg:2146.6674227466715]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2334.688227011948
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2334.688227011948]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2000.3675886705964
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2000.3675886705964]
+2 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2000.3675886705964
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:2.0|cent_avg:2000.3675886705964]
+3 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:2.0, cent_target:2084.4056937521996, cent_eval:2334.688227011948
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:1.0|cent_avg:2334.688227011948]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:1.0, cent_target:2084.4056937521996, cent_eval:2511.039997274713
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2511.039997274713]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2334.688227011948
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2334.688227011948]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2270.1522809772314
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2270.1522809772314]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2157.2580135224603
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2157.2580135224603]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2000.3675886705964
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2000.3675886705964]
+9 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2000.3675886705964
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.5|cent_avg:2000.3675886705964]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.5, cent_target:2084.4056937521996, cent_eval:2157.2580135224603
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.75|cent_avg:2157.2580135224603]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.75, cent_target:2084.4056937521996, cent_eval:2213.1150237650604
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2213.1150237650604]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2157.2580135224603
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.25|cent_avg:2157.2580135224603]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.25, cent_target:2084.4056937521996, cent_eval:2119.432181475453
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.5|cent_avg:2119.432181475453]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.5, cent_target:2084.4056937521996, cent_eval:2089.8296986154637
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.75|cent_avg:2089.8296986154637]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2658.469817713761
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2658.469817713761]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2391.1159946760904
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2391.1159946760904]
+2 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:2026.9493787735585
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2026.9493787735585]
+3 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2026.9493787735585
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2026.9493787735585]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2391.1159946760904
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2391.1159946760904]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2519.140877517261
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2519.140877517261]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2391.1159946760904
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2391.1159946760904]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2262.0598277457593
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2262.0598277457593]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2136.8183801870473
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2136.8183801870473]
+9 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:2026.9493787735585
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2026.9493787735585]
+10 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2026.9493787735585
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.5|cent_avg:2026.9493787735585]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.5, cent_target:2084.4056937521996, cent_eval:2136.8183801870473
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.75|cent_avg:2136.8183801870473]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.75, cent_target:2084.4056937521996, cent_eval:2164.649880944832
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2164.649880944832]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2136.8183801870473
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.25|cent_avg:2136.8183801870473]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-5.25, cent_target:2084.4056937521996, cent_eval:2109.25044222921
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.5|cent_avg:2109.25044222921]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2606.247621234411
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2606.247621234411]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2255.642809107047
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2255.642809107047]
+2 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:1898.970056814436
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:1898.970056814436]
+3 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:1898.970056814436
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:1898.970056814436]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2255.642809107047
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2255.642809107047]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2367.1397282274825
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2367.1397282274825]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2255.642809107047
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2255.642809107047]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2127.704976817089
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2127.704976817089]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2015.2391185766176
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2015.2391185766176]
+9 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2015.2391185766176
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.5|cent_avg:2015.2391185766176]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.5, cent_target:2084.4056937521996, cent_eval:2127.704976817089
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.75|cent_avg:2127.704976817089]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.75, cent_target:2084.4056937521996, cent_eval:2161.2216330213073
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2161.2216330213073]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2127.704976817089
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.25|cent_avg:2127.704976817089]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.25, cent_target:2084.4056937521996, cent_eval:2097.1566600677183
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.5|cent_avg:2097.1566600677183]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.5, cent_target:2084.4056937521996, cent_eval:2067.7881977847037
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.25|cent_avg:2067.7881977847037]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2235.4088000496763
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2235.4088000496763]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:1945.9706610200449
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:1945.9706610200449]
+2 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:1945.9706610200449
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:2.0|cent_avg:1945.9706610200449]
+3 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:2.0, cent_target:2084.4056937521996, cent_eval:2235.4088000496763
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:1.0|cent_avg:2235.4088000496763]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:1.0, cent_target:2084.4056937521996, cent_eval:2423.3395580599504
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2423.3395580599504]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2235.4088000496763
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2235.4088000496763]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2158.570532807702
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2158.570532807702]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2054.788804559176
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2054.788804559176]
+8 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2054.788804559176
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-0.5|cent_avg:2054.788804559176]
+9 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-0.5, cent_target:2084.4056937521996, cent_eval:2158.570532807702
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-0.75|cent_avg:2158.570532807702]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-0.75, cent_target:2084.4056937521996, cent_eval:2172.4576214723743
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2172.4576214723743]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2158.570532807702
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.25|cent_avg:2158.570532807702]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.25, cent_target:2084.4056937521996, cent_eval:2138.658091397861
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.5|cent_avg:2138.658091397861]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.5, cent_target:2084.4056937521996, cent_eval:2116.501495528687
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.75|cent_avg:2116.501495528687]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.75, cent_target:2084.4056937521996, cent_eval:2089.1879075945785
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2089.1879075945785]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2692.8871209010154
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2692.8871209010154]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2326.9420095078463
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2326.9420095078463]
+2 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:1918.9076221049684
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:1918.9076221049684]
+3 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:1918.9076221049684
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:1918.9076221049684]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2326.9420095078463
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2326.9420095078463]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2468.429420946632
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2468.429420946632]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2326.9420095078463
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2326.9420095078463]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2156.1452245838877
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-5.0|cent_avg:2156.1452245838877]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-5.0, cent_target:2084.4056937521996, cent_eval:2003.9793010510161
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2003.9793010510161]
+9 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2003.9793010510161
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.5|cent_avg:2003.9793010510161]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.5, cent_target:2084.4056937521996, cent_eval:2156.1452245838877
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.75|cent_avg:2156.1452245838877]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.75, cent_target:2084.4056937521996, cent_eval:2201.9490135780557
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2201.9490135780557]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2156.1452245838877
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.25|cent_avg:2156.1452245838877]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.25, cent_target:2084.4056937521996, cent_eval:2108.920418183672
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.5|cent_avg:2108.920418183672]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-4.5, cent_target:2084.4056937521996, cent_eval:2071.58649045445
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.25|cent_avg:2071.58649045445]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2457.37090313045
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2457.37090313045]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2124.7216686076135
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-6.0|cent_avg:2124.7216686076135]
+2 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-6.0, cent_target:2084.4056937521996, cent_eval:1793.1455357982964
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:1793.1455357982964]
+3 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:1793.1455357982964
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:1793.1455357982964]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2124.7216686076135
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2124.7216686076135]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2245.754616351424
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2245.754616351424]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2124.7216686076135
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-4.0|cent_avg:2124.7216686076135]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-4.0, cent_target:2084.4056937521996, cent_eval:2006.206413149864
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2006.206413149864]
+8 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2006.206413149864
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.5|cent_avg:2006.206413149864]
+9 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.5, cent_target:2084.4056937521996, cent_eval:2124.7216686076135
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.75|cent_avg:2124.7216686076135]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.75, cent_target:2084.4056937521996, cent_eval:2151.925057777647
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2151.925057777647]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2124.7216686076135
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.25|cent_avg:2124.7216686076135]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.25, cent_target:2084.4056937521996, cent_eval:2093.433671617142
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.5|cent_avg:2093.433671617142]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-3.5, cent_target:2084.4056937521996, cent_eval:2064.8523309090046
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.25|cent_avg:2064.8523309090046]
+14 step | is_zero_crossing:False, steps_inc:0.125, cur_steps:-3.25, cent_target:2084.4056937521996, cent_eval:2064.8523309090046
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.125|cent_avg:2064.8523309090046]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2333.1627592006166
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2333.1627592006166]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2025.1254753400272
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2025.1254753400272]
+2 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2025.1254753400272
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:2.0|cent_avg:2025.1254753400272]
+3 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:2.0, cent_target:2084.4056937521996, cent_eval:2333.1627592006166
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:1.0|cent_avg:2333.1627592006166]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:1.0, cent_target:2084.4056937521996, cent_eval:2483.6091790965475
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2483.6091790965475]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2333.1627592006166
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2333.1627592006166]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2244.4213232993407
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2244.4213232993407]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2143.215550777425
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2143.215550777425]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2025.1254753400272
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2025.1254753400272]
+9 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2025.1254753400272
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.5|cent_avg:2025.1254753400272]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.5, cent_target:2084.4056937521996, cent_eval:2143.215550777425
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.75|cent_avg:2143.215550777425]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.75, cent_target:2084.4056937521996, cent_eval:2170.0520288015123
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2170.0520288015123]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2143.215550777425
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.25|cent_avg:2143.215550777425]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.25, cent_target:2084.4056937521996, cent_eval:2114.3841277916376
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.5|cent_avg:2114.3841277916376]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.5, cent_target:2084.4056937521996, cent_eval:2085.0061829577153
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.75|cent_avg:2085.0061829577153]
+0 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2338.775184644094
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2338.775184644094]
+1 step | is_zero_crossing:False, steps_inc:3.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2030.6245858363304
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2030.6245858363304]
+2 step | is_zero_crossing:False, steps_inc:2.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2030.6245858363304
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:2.0|cent_avg:2030.6245858363304]
+3 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:2.0, cent_target:2084.4056937521996, cent_eval:2338.775184644094
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:1.0|cent_avg:2338.775184644094]
+4 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:1.0, cent_target:2084.4056937521996, cent_eval:2499.3634734103534
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:0.0|cent_avg:2499.3634734103534]
+5 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:0.0, cent_target:2084.4056937521996, cent_eval:2338.775184644094
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.0|cent_avg:2338.775184644094]
+6 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-1.0, cent_target:2084.4056937521996, cent_eval:2240.7448716821145
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2240.7448716821145]
+7 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2144.088345120235
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-3.0|cent_avg:2144.088345120235]
+8 step | is_zero_crossing:False, steps_inc:1.0, cur_steps:-3.0, cent_target:2084.4056937521996, cent_eval:2030.6245858363304
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2030.6245858363304]
+9 step | is_zero_crossing:False, steps_inc:0.5, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2030.6245858363304
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.5|cent_avg:2030.6245858363304]
+10 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.5, cent_target:2084.4056937521996, cent_eval:2144.088345120235
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-1.75|cent_avg:2144.088345120235]
+11 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-1.75, cent_target:2084.4056937521996, cent_eval:2165.752734553612
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.0|cent_avg:2165.752734553612]
+12 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.0, cent_target:2084.4056937521996, cent_eval:2144.088345120235
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.25|cent_avg:2144.088345120235]
+13 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.25, cent_target:2084.4056937521996, cent_eval:2117.551437486514
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.5|cent_avg:2117.551437486514]
+14 step | is_zero_crossing:False, steps_inc:0.25, cur_steps:-2.5, cent_target:2084.4056937521996, cent_eval:2087.9687239923846
+[SRC|n_steps:unknown|cent_avg:2084.4056937521996][EVA|n_steps:-2.75|cent_avg:2087.9687239923846]
+
+Process finished with exit code 0
