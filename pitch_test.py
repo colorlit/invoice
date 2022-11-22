@@ -16,20 +16,14 @@ root_dir = os.getcwd()
 input_dir = root_dir + r'\SAMPLES\inputs'
 output_dir = root_dir + r'\SAMPLES\outputs'
 
-#files_list = os.listdir(input_dir)
 for path in os.listdir(input_dir):
     if os.path.isfile(os.path.join(input_dir, path)):
         files_list.append(path)
 
-print(files_list)
-
 for filename in files_list:
-    file_name.append(os.path.join(input_dir, filename))
-
-#file_name = input_dir + r'\\' + files_list[0]
-
-print(file_name)
-
+    # Extension check
+    if os.path.splitext(os.path.join(input_dir, filename))[-1] == '.wav':
+        file_name.append(os.path.join(input_dir, filename))
 
 # Preprocessing
 y_ax, sr = librosa.load(file_name[0])
@@ -45,13 +39,6 @@ y_usr, sr_usr = librosa.load(file_name[1])
 y_sample_ts = pyrb.time_stretch(y_usr, sr=sr_usr, rate=1)
 y_sample_ps = pyrb.pitch_shift(y_sample_ts, sr=sr_usr, n_steps=0)
 cent_target = np.average(librosa.feature.spectral_centroid(y=y_sample_ps, sr=sr_usr))
-
-#sample_n_steps = -9.15
-
-#y_sample_ts = pyrb.time_stretch(y_ax, sr=sr, rate=1)
-#y_sample_ps = pyrb.pitch_shift(y_pyrb_ts, sr=sr, n_steps=sample_n_steps)
-#cent_target = np.average(librosa.feature.spectral_centroid(y=y_sample_ps, sr=sr))
-
 
 # Calculate n_steps
 y_eval_ts = pyrb.time_stretch(y_ax, sr=sr, rate=1)
@@ -99,7 +86,6 @@ for step in range(15):
             steps_inc -= 1
         elif steps_inc > 0.0:
             steps_inc /= 2
-
 
 print('[SRC|n_steps:{0}|cent_avg:{1}][EVA|n_steps:{2}|cent_avg:{3}]'.format('unknown', cent_target, cur_steps, cent_eval))
 
