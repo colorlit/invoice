@@ -10,12 +10,18 @@ import librosa
 import librosa.display
 import numpy as np
 import os
+import threading
 
 import AudioRecorder
 import SampleProcessor
 import ffmpeg_conv
 
+
 form_class = uic.loadUiType("./invoice.ui")[0]
+
+
+def audio_rec_toggle():
+    AudioRecorder.is_active = 0
 
 
 class WindowClass(QMainWindow, form_class):
@@ -55,7 +61,6 @@ class WindowClass(QMainWindow, form_class):
         self.push_btn_help.clicked.connect(lambda: self.btn_help())
         # does anybody knows why these guys need lambda? plz elaborate
 
-
     def open_files(self):
         # import sample files | call file_name[index]
         for path in os.listdir(self.input_dir):
@@ -77,7 +82,6 @@ class WindowClass(QMainWindow, form_class):
             if os.path.splitext(os.path.join(self.usr_input_dir, filename))[-1] == '.wav':
                 self.usr_file_name.append(os.path.join(self.usr_input_dir, filename))
 
-
     def show_plt(self):
         self.open_files()
         self.y_tgt, self.sr_tgt = librosa.load(self.file_name[0])
@@ -97,26 +101,25 @@ class WindowClass(QMainWindow, form_class):
         librosa.display.waveshow(self.y_usr, sr=self.sr_usr, ax=self.plot_usr)
         self.canvas_usr.draw()
 
-
     def btn_record(self):
-        AudioRecorder.recording()
-
+        sub_thread = threading.Thread(target=AudioRecorder.recording)
+        sub_thread.start()
+        print('main thread')
+        #AudioRecorder.recording()
 
     def btn_select(self):
         print('SELECTING')
 
-
     def btn_convert(self):
         ffmpeg_conv.format_convert()
-
 
     def btn_process(self):
         SampleProcessor.audio_process()
 
-
     def btn_init(self):
         print('INIT')
-
+        audio_rec_toggle()
+        #MicStream.is_active = False
 
     def btn_help(self):
         print('HELP')

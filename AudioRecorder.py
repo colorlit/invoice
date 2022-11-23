@@ -3,12 +3,17 @@ import wave
 import os
 import time
 
+is_active = 1
+
+
 def recording():
+    global is_active
+    is_active = 1
     chunk = 1024
     format = pyaudio.paInt16
     channels = 1
     rate = 44100
-    record_duration = 10
+    #record_duration = 10
 
     root_dir = os.getcwd()
     input_dir = root_dir + r'\data\inputs'
@@ -25,9 +30,11 @@ def recording():
 
     frames = []
 
-    for i in range(0, int(rate / chunk * record_duration)):
+    #for i in range(0, int(rate / chunk * record_duration)):
+    while is_active == 1:
         data = stream.read(chunk)
         frames.append(data)
+        print(is_active)
 
     stream.stop_stream()
     stream.close()
