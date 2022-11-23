@@ -13,6 +13,7 @@ import os
 import threading
 
 import AudioRecorder
+import AudioPlayer
 import SampleProcessor
 import ffmpeg_conv
 
@@ -40,9 +41,13 @@ class WindowClass(QMainWindow, form_class):
         self.sr_usr = None
         self.plot_tgt = None
         self.plot_usr = None
-        self.track_id = None
+        self.track_id = 0
         self.is_tgt_sel = None
         self.is_usr_sel = None
+        self.tgt_play_file_name = None
+        self.usr_play_file_name = None
+        self.is_input_file_exist = None
+        self.is_usr_input_file_exist = None
 
         # file management
         self.files_list = []
@@ -53,6 +58,7 @@ class WindowClass(QMainWindow, form_class):
         self.input_dir = self.root_dir + r'\data\inputs'
         self.usr_input_dir = self.root_dir + r'\data\usr_inputs'
         self.output_dir = self.root_dir + r'\data\outputs'
+        self.sample_dir = self.root_dir + r'\data\samples'
 
         # button click event handlers
         # sidebar ui
@@ -72,25 +78,35 @@ class WindowClass(QMainWindow, form_class):
         # got understood why these lines need lambda, no needs of () closing in the call of event func
 
     def open_files(self):
+        self.is_input_file_exist = False
+        self.is_usr_input_file_exist = False
         # import sample files | call file_name[index]
         for path in os.listdir(self.input_dir):
             if os.path.isfile(os.path.join(self.input_dir, path)):
                 self.files_list.append(path)
+                self.is_input_file_exist = True
 
-        for filename in self.files_list:
-            # Extension check
-            if os.path.splitext(os.path.join(self.input_dir, filename))[-1] == '.wav':
-                self.file_name.append(os.path.join(self.input_dir, filename))
+        if self.is_input_file_exist is False:
+            self.file_name.append(os.path.join(self.sample_dir, 'sample.wav'))
+        else:
+            for filename in self.files_list:
+                # Extension check
+                if os.path.splitext(os.path.join(self.input_dir, filename))[-1] == '.wav':
+                    self.file_name.append(os.path.join(self.input_dir, filename))
 
         # import user input files | call usr_file_name[index]
         for path in os.listdir(self.usr_input_dir):
             if os.path.isfile(os.path.join(self.usr_input_dir, path)):
                 self.usr_files_list.append(path)
+                self.is_usr_input_file_exist = True
 
-        for filename in self.usr_files_list:
-            # Extension check
-            if os.path.splitext(os.path.join(self.usr_input_dir, filename))[-1] == '.wav':
-                self.usr_file_name.append(os.path.join(self.usr_input_dir, filename))
+        if self.is_usr_input_file_exist is False:
+            self.usr_file_name.append(os.path.join(self.sample_dir, 'sample.wav'))
+        else:
+            for filename in self.usr_files_list:
+                # Extension check
+                if os.path.splitext(os.path.join(self.usr_input_dir, filename))[-1] == '.wav':
+                    self.usr_file_name.append(os.path.join(self.usr_input_dir, filename))
 
     def show_plt(self):
         self.open_files()
@@ -127,17 +143,19 @@ class WindowClass(QMainWindow, form_class):
         ffmpeg_conv.format_convert()
 
     def btn_process(self):
+        #print('CURRENT FILE PROCESS AND PLAYBACK')
         SampleProcessor.audio_process()
 
     def btn_batch(self):
-        print('BATCH PROCESS')
+        SampleProcessor.audio_process()
+        #print('BATCH PROCESS')
 
     # playback ui
     def btn_tgt_play(self):
-        pass
+        AudioPlayer.playing(self.file_name[self.track_id])
 
     def btn_usr_play(self):
-        pass
+        AudioPlayer.playing(self.usr_file_name[self.track_id])
 
     # track control ui
     def btn_tgt_sel(self):
@@ -153,7 +171,8 @@ class WindowClass(QMainWindow, form_class):
         # self.<objname>.setText('string')
         # how to 'read' text
         # return = self.<objname>.text()
-        self.track_id = self.line_edit_id_sel.text()
+        self.track_id = int(float(self.line_edit_id_sel.text()))
+        #print(self.track_id)
 
 
 if __name__ == "__main__":
