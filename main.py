@@ -16,7 +16,6 @@ import AudioRecorder
 import SampleProcessor
 import ffmpeg_conv
 
-
 form_class = uic.loadUiType("./invoice.ui")[0]
 
 
@@ -41,6 +40,9 @@ class WindowClass(QMainWindow, form_class):
         self.sr_usr = None
         self.plot_tgt = None
         self.plot_usr = None
+        self.track_id = None
+        self.is_tgt_sel = None
+        self.is_usr_sel = None
 
         # file management
         self.files_list = []
@@ -53,13 +55,21 @@ class WindowClass(QMainWindow, form_class):
         self.output_dir = self.root_dir + r'\data\outputs'
 
         # button click event handlers
-        self.push_btn_record.clicked.connect(lambda: self.btn_record())
-        self.push_btn_select.clicked.connect(lambda: self.btn_select())
-        self.push_btn_process.clicked.connect(lambda: self.btn_process())
+        # sidebar ui
         self.push_btn_convert.clicked.connect(lambda: self.btn_convert())
-        self.push_btn_init.clicked.connect(lambda: self.btn_init())
-        self.push_btn_help.clicked.connect(lambda: self.btn_help())
-        # does anybody knows why these guys need lambda? plz elaborate
+        self.push_btn_process.clicked.connect(lambda: self.btn_process())
+        self.push_btn_batch.clicked.connect(lambda: self.btn_batch())
+        self.push_btn_load.clicked.connect(lambda: self.btn_load())
+        self.push_btn_record.clicked.connect(lambda: self.btn_record())
+        self.push_btn_stop.clicked.connect(lambda: self.btn_stop())
+        # playback ui
+        self.push_btn_tgt_play.clicked.connect(lambda: self.btn_tgt_play())
+        self.push_btn_usr_play.clicked.connect(lambda: self.btn_usr_play())
+        # track controls
+        self.push_btn_tgt_sel.clicked.connect(lambda: self.btn_tgt_sel())
+        self.push_btn_usr_sel.clicked.connect(lambda: self.btn_usr_sel())
+        self.line_edit_id_sel.returnPressed.connect(lambda: self.ln_edit_id_sel())
+        # got understood why these lines need lambda, no needs of () closing in the call of event func
 
     def open_files(self):
         # import sample files | call file_name[index]
@@ -101,14 +111,17 @@ class WindowClass(QMainWindow, form_class):
         librosa.display.waveshow(self.y_usr, sr=self.sr_usr, ax=self.plot_usr)
         self.canvas_usr.draw()
 
+    # sidebar ui
     def btn_record(self):
         sub_thread = threading.Thread(target=AudioRecorder.recording)
         sub_thread.start()
-        print('main thread')
         #AudioRecorder.recording()
 
-    def btn_select(self):
-        print('SELECTING')
+    def btn_stop(self):
+        audio_rec_toggle()
+
+    def btn_load(self):
+        print('LOAD FILES')
 
     def btn_convert(self):
         ffmpeg_conv.format_convert()
@@ -116,13 +129,31 @@ class WindowClass(QMainWindow, form_class):
     def btn_process(self):
         SampleProcessor.audio_process()
 
-    def btn_init(self):
-        print('INIT')
-        audio_rec_toggle()
-        #MicStream.is_active = False
+    def btn_batch(self):
+        print('BATCH PROCESS')
 
-    def btn_help(self):
-        print('HELP')
+    # playback ui
+    def btn_tgt_play(self):
+        pass
+
+    def btn_usr_play(self):
+        pass
+
+    # track control ui
+    def btn_tgt_sel(self):
+        self.is_tgt_sel = True
+        self.is_usr_sel = False
+
+    def btn_usr_sel(self):
+        self.is_usr_sel = True
+        self.is_tgt_sel = False
+
+    def ln_edit_id_sel(self):
+        # how to 'put' text
+        # self.<objname>.setText('string')
+        # how to 'read' text
+        # return = self.<objname>.text()
+        self.track_id = self.line_edit_id_sel.text()
 
 
 if __name__ == "__main__":

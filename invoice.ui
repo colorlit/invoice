@@ -239,7 +239,7 @@ color: rgb(55, 71, 79)</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QPushButton" name="push_btn_record">
+      <widget class="QPushButton" name="push_btn_convert">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -254,10 +254,10 @@ font: 87 20pt &quot;Arial Black&quot;;
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>RECORD</string>
+        <string>CONVERT</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="push_btn_select">
+      <widget class="QPushButton" name="push_btn_process">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -272,10 +272,10 @@ font: 87 20pt &quot;Arial Black&quot;;
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>SELECT</string>
+        <string>PROCESS</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="push_btn_process">
+      <widget class="QPushButton" name="push_btn_batch">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -290,10 +290,10 @@ font: 87 20pt &quot;Arial Black&quot;;
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>PROCESS</string>
+        <string>BATCH</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="push_btn_convert">
+      <widget class="QPushButton" name="push_btn_load">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -308,10 +308,10 @@ font: 87 20pt &quot;Arial Black&quot;;
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>CONVERT</string>
+        <string>LOAD</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="push_btn_init">
+      <widget class="QPushButton" name="push_btn_record">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -326,10 +326,10 @@ font: 87 20pt &quot;Arial Black&quot;;
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>INIT</string>
+        <string>REC</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="push_btn_help">
+      <widget class="QPushButton" name="push_btn_stop">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -344,10 +344,198 @@ font: 87 20pt &quot;Arial Black&quot;;
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>HELP</string>
+        <string>STOP</string>
        </property>
       </widget>
      </widget>
+    </widget>
+    <widget class="QPushButton" name="push_btn_tgt_sel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>450</y>
+       <width>75</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+background-color: rgb(55, 71, 79);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>TGT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_btn_usr_sel">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>450</y>
+       <width>75</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+background-color: rgb(55, 71, 79);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>USR</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_9">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>450</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(55, 71, 79);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>SELECT TRACK</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_10">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>450</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(120, 144, 156);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>SELECT SRC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_11">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>450</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(69, 90, 100)</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="line_edit_id_sel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 144, 156);
+border: none;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>HIT ENT</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="push_btn_tgt_play">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>20</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(55, 71, 79)</string>
+     </property>
+     <property name="text">
+      <string>PLAY</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_btn_usr_play">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>230</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 87 18pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(55, 71, 79)</string>
+     </property>
+     <property name="text">
+      <string>PLAY</string>
+     </property>
     </widget>
    </widget>
   </widget>
