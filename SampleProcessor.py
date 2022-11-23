@@ -4,6 +4,9 @@ import numpy as np
 import soundfile as sf
 import pyrubberband as pyrb
 import os
+import time
+
+import AudioPlayer
 
 
 def phase_finder(y, sr, sa_avg_cent):
@@ -64,7 +67,7 @@ def phase_finder(y, sr, sa_avg_cent):
     return cur_steps
 
 
-def audio_process():
+def audio_process(track_id):
     # file management
     files_list = []
     file_name = []
@@ -74,6 +77,11 @@ def audio_process():
     input_dir = root_dir + r'\data\inputs'
     usr_input_dir = root_dir + r'\data\usr_inputs'
     output_dir = root_dir + r'\data\outputs'
+
+    is_batch_mode = False
+
+    if track_id == -72:
+        is_batch_mode = True
 
     # import sample files | call file_name[index]
     for path in os.listdir(input_dir):
@@ -85,6 +93,13 @@ def audio_process():
         if os.path.splitext(os.path.join(input_dir, filename))[-1] == '.wav':
             file_name.append(os.path.join(input_dir, filename))
 
+    if is_batch_mode is False:
+        file_name_store = file_name[track_id]
+        del file_name
+        file_name = []
+        file_name.append(file_name_store)
+        #print(file_name)
+
     # import user input files | call usr_file_name[index]
     for path in os.listdir(usr_input_dir):
         if os.path.isfile(os.path.join(usr_input_dir, path)):
@@ -94,6 +109,13 @@ def audio_process():
         # Extension check
         if os.path.splitext(os.path.join(usr_input_dir, filename))[-1] == '.wav':
             usr_file_name.append(os.path.join(usr_input_dir, filename))
+
+    if is_batch_mode is False:
+        usr_file_name_store = usr_file_name[track_id]
+        del usr_file_name
+        usr_file_name = []
+        usr_file_name.append(usr_file_name_store)
+        #print(usr_file_name)
 
     # sample preprocessing
     sa_avg_cent = None
@@ -125,5 +147,8 @@ def audio_process():
         output_file = os.path.basename(usr_file_name[file_idx])
         sf.write(os.path.join(output_dir, output_file), y_proc, sr_ap, subtype='PCM_24')
 
-
-#audio_process()
+    if is_batch_mode is False:
+        # address processing delay
+        time.sleep(3.5)
+        playback_path = os.path.join(output_dir, output_file)
+        AudioPlayer.playing(playback_path)
