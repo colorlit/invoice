@@ -98,7 +98,6 @@ def audio_process(track_id):
         del file_name
         file_name = []
         file_name.append(file_name_store)
-        #print(file_name)
 
     # import user input files | call usr_file_name[index]
     for path in os.listdir(usr_input_dir):
@@ -115,7 +114,6 @@ def audio_process(track_id):
         del usr_file_name
         usr_file_name = []
         usr_file_name.append(usr_file_name_store)
-        #print(usr_file_name)
 
     # sample preprocessing
     sa_avg_cent = None
@@ -148,7 +146,8 @@ def audio_process(track_id):
         sf.write(os.path.join(output_dir, output_file), y_proc, sr_ap, subtype='PCM_24')
 
     if is_batch_mode is False:
-        # address processing delay
-        time.sleep(3.5)
+        # address processing delay...
+        # but it seems that the main thread does not meet any of conflict due to its blocking exec.
+        time.sleep(0.7)
         playback_path = os.path.join(output_dir, output_file)
         AudioPlayer.playing(playback_path)
