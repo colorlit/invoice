@@ -144,10 +144,10 @@ class WindowClass(QMainWindow, form_class):
 
     def btn_process(self):
         #print('CURRENT FILE PROCESS AND PLAYBACK')
-        SampleProcessor.audio_process(self.track_id)
+        SampleProcessor.audio_process_alt(self.track_id)
 
     def btn_batch(self):
-        SampleProcessor.audio_process(-72)
+        SampleProcessor.audio_process_alt(-72)
         #print('BATCH PROCESS')
 
     # playback ui
